@@ -296,8 +296,9 @@ Week24plot <- plot_ly(houseWeek242008hour, x = ~houseWeek242008hour$DateTime, y 
 houseMonth6July2008 <- filter(main, year == 2008 & month == 7 & (hour == 0 | hour==6 | hour==12 | hour==18) & minute ==0)
 Month6plot6 <- plot_ly(houseMonth6July2008, x = ~houseMonth6July2008$DateTime, y = ~houseMonth6July2008$Sub1, name = 'Kitchen', type='scatter', mode='lines') %>% add_trace(y = ~houseMonth6July2008$Sub2, name = 'Laundry Room', mode = 'lines') %>% add_trace(y=~houseMonth6July2008$Sub3, name = 'Water Heater & AC', mode = 'lines')%>% layout(title="Power Consumption the month of July, 2008", xaxis = list(title = "Time"), yaxis=list(title="Power (watt-hours)"))
 ```
-
-![Plot 1](C:\Users\Eric\AppData\Local\Temp\Rtmp2lk9d4\file2825014bb403aJanplot.png) ![Plot 2](C:\Users\Eric\AppData\Local\Temp\Rtmp2lk9d4\file28250287612e3Weekplot.png) ![Plot 3](C:\Users\Eric\AppData\Local\Temp\Rtmp2lk9d4\file282507763f50Monthplot.png)
+![](Energymarkdown_files/figure-markdown_github/Jan9Plot2.png)
+![](Energymarkdown_files/figure-markdown_github/unnamed-chunk-9-2.png)
+![](Energymarkdown_files/figure-markdown_github/Month6plot6.png)
 
 Prepare to Analyze the Data
 ===========================
